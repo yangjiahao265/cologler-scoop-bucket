@@ -2,5 +2,12 @@
     "$schema": "https://github.com/lukesampson/scoop/raw/master/schema.json",
     "version": "1",
     "url": "https://gist.github.com/Cologler/8b5d44890d95c58ab41b0fb85cb05dce/archive/master.zip",
-    "bin": "tmpwd.ps1"
+    "extract_to": "tmp",
+    "pre_install": [
+        "Get-Childitem –Path $dir/tmp -Recurse | ForEach-Object {",
+        "   Move-Item –Path $dir/tmp/$_ $dir/scripts",
+        "}",
+        "Remove-Item –Path $dir/tmp"
+    ],
+    "bin": "scripts/tmpwd.ps1"
 }
