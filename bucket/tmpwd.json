@@ -1,6 +1,6 @@
 {
     "$schema": "https://github.com/lukesampson/scoop/raw/master/schema.json",
-    "version": "1",
+    "version": "2",
     "url": "https://gist.github.com/Cologler/8b5d44890d95c58ab41b0fb85cb05dce/archive/master.zip",
     "extract_to": "tmp",
     "pre_install": [
