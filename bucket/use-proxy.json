@@ -1,0 +1,13 @@
+{
+    "$schema": "https://github.com/lukesampson/scoop/raw/master/schema.json",
+    "version": "1",
+    "url": "https://gist.github.com/Cologler/4e8346b69f1a0edad013096b2bb73958/archive/master.zip",
+    "extract_to": "tmp",
+    "pre_install": [
+        "Get-Childitem –Path $dir/tmp -Recurse | ForEach-Object {",
+        "   Move-Item –Path $dir/tmp/$_ $dir/scripts",
+        "}",
+        "Remove-Item –Path $dir/tmp"
+    ],
+    "bin": "scripts/use-proxy.ps1"
+}
