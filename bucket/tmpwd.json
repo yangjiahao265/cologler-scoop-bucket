@@ -4,7 +4,7 @@
     "url": "https://gist.github.com/Cologler/8b5d44890d95c58ab41b0fb85cb05dce/archive/master.zip",
     "extract_to": "tmp",
     "pre_install": [
-        "Get-Childitem -Path $dir/tmp/* -Recurse -Force | Move-Item -Destination $dir",
+        "Get-Childitem -Path $dir/tmp/* -Recurse | Move-Item -Destination $dir -Confirm",
         "Remove-Item –Path $dir/tmp"
     ],
     "bin": "tmpwd.ps1"
