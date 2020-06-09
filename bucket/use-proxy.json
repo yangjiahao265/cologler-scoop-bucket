@@ -4,7 +4,7 @@
     "url": "https://gist.github.com/Cologler/4e8346b69f1a0edad013096b2bb73958/archive/master.zip",
     "extract_to": "tmp",
     "pre_install": [
-        "Get-Childitem -Path $dir/tmp/* -Recurse | Move-Item -Destination $dir",
+        "Get-Childitem -Path $dir/tmp/* -Recurse | Move-Item -Destination $dir -Confirm",
         "Remove-Item –Path $dir/tmp"
     ],
     "bin": "use-proxy.ps1"
