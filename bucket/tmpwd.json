@@ -1,9 +1,9 @@
 {
     "$schema": "https://github.com/lukesampson/scoop/raw/master/schema.json",
-    "version": "2",
+    "version": "4",
     "homepage": "https://gist.github.com/Cologler/8b5d44890d95c58ab41b0fb85cb05dce",
     "description": "Create a temp dir and set as workdir.",
-    "url": "https://gist.github.com/Cologler/8b5d44890d95c58ab41b0fb85cb05dce/archive/master.zip",
+    "url": "https://gist.github.com/Cologler/8b5d44890d95c58ab41b0fb85cb05dce/archive/6d100e0f87a8dc6bb8b94abb620d905a36431b6d.zip",
     "extract_to": "tmp",
     "pre_install": [
         "Get-Childitem -Path $dir/tmp/* -Recurse | Move-Item -Destination $dir -Confirm",
