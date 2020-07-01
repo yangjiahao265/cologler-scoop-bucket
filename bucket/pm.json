@@ -7,7 +7,7 @@
         "Get-Childitem –Path $dir/tmp -Recurse | ForEach-Object {",
         "   Move-Item –Path $dir/tmp/$_ $dir/scripts",
         "}",
-        "Remove-Item –Path $dir/tmp"
+        "Remove-Item -Recurse –Path $dir/tmp"
     ],
     "bin": "scripts/pm.ps1"
 }
