@@ -1,9 +1,9 @@
 {
     "$schema": "https://github.com/lukesampson/scoop/raw/master/schema.json",
     "description": "Scoop export and import scripts",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "homepage": "https://github.com/Cologler/ScoopBackup-pwsh",
-    "url": "https://github.com/Cologler/ScoopBackup-pwsh/archive/v1.2.0.zip",
+    "url": "https://github.com/Cologler/ScoopBackup-pwsh/archive/v1.2.1.zip",
     "extract_to": "tmp",
     "pre_install": [
         "Move-Item $dir/tmp/*/ScoopBackup/ $dir/ScoopBackup",
